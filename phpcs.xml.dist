@@ -1,12 +1,19 @@
 <?xml version="1.0"?>
-<ruleset name="Part_AdvLayNav">
-    <description>Webjump_BraspagPagador coding standards</description>
+<!--
+/**
+ *
+ * @author      Webjump Core Team <dev@webjump.com>
+ * @copyright   2016 Webjump (http://www.webjump.com.br)
+ * @license     http://www.webjump.com.br  Copyright
+ *
+ * @link        http://www.webjump.com.br
+ */
+-->
+<ruleset name="Webjump_CustomerBase_Coding_Standarts">
+    <description>Webjump coding standards</description>
     <arg value="p"/>
     <arg name="colors"/>
     <rule ref="./vendor/magento-ecg/coding-standard/EcgM2/ruleset.xml"/>
-    <file>Block</file>
-    <file>Helper</file>
-    <file>Model</file>
-    <file>Observer</file>
-    <file>Test</file>
+	<exclude-pattern>*/Test/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
 </ruleset>
